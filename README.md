@@ -10,6 +10,7 @@ Communication: REST API + WebSocket
 Tools: Node.js, Virtual Environment (venv)
 
 🗂 Project Structure
+
 project-root/
 │
 ├── backend/
