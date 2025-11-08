@@ -1,16 +1,69 @@
-# React + Vite
+🚦 Intelligent Traffic & Streetlight Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An integrated IoT + AI solution that automates streetlight and traffic signal control using real-time camera and motion data. Built with a FastAPI/Flask backend and a React + Vite + TailwindCSS frontend for smooth communication and analytics visualization.
 
-Currently, two official plugins are available:
+🧩 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend: React, Vite, TailwindCSS
+Backend: Python (FastAPI/Flask)
+Communication: REST API + WebSocket
+Tools: Node.js, Virtual Environment (venv)
 
-## React Compiler
+🗂 Project Structure
+project-root/
+│
+├── backend/
+│   ├── devices/              # IoT device logic  
+│   ├── motion/               # Motion and camera modules  
+│   ├── config.py             # App configuration  
+│   ├── server.py             # Main backend server  
+│   ├── shared_state.py       # Shared memory/state manager  
+│   └── requirements.txt      # Python dependencies  
+│
+├── src/
+│   ├── assets/               # Static media  
+│   ├── components/           # React UI components  
+│   ├── lib/                  # Utility and helper functions  
+│   ├── App.jsx               # Main React component  
+│   └── main.jsx              # App entry point  
+│
+├── public/                   # Public frontend assets  
+├── tailwind.config.js        # Tailwind setup  
+├── vite.config.js            # Vite build config  
+├── package.json              # Node dependencies  
+└── README.md                 # Documentation  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚙️ Installation
+1️⃣ Backend Setup
+cd backend
+python -m venv venv
+venv\Scripts\activate      # Windows
+source venv/bin/activate   # macOS/Linux
+pip install -r requirements.txt
+python server.py
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Backend runs by default on http://127.0.0.1:5000
+
+2️⃣ Frontend Setup
+npm install
+npm run dev
+
+
+Frontend runs on http://localhost:5173
+
+🌐 Features
+
+🚘 Adaptive Signal Control based on vehicle density
+
+💡 Automated Streetlight Dimming
+
+📊 Real-time Traffic Analytics Dashboard
+
+⚡ Energy Generation Integration (Wind Turbines)
+
+🧠 Shared State System for backend coordination
+
+📸 UI & Visualization
+
+Interactive web dashboard for monitoring and manual override with smooth Tailwind animations and responsive layout.
